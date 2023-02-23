@@ -51,7 +51,7 @@ CREATE TABLE public.comet (
     comet_id integer NOT NULL,
     name character varying(30) NOT NULL,
     discovery_year integer NOT NULL,
-    mass_in_kg integer,
+    mass_in_kg integer,  --needs to changed to bigint and get the data in the table corrected
     description text
 );
 
@@ -269,9 +269,9 @@ ALTER TABLE ONLY public.star ALTER COLUMN star_id SET DEFAULT nextval('public.st
 -- Data for Name: comet; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.comet VALUES (1, 'Halley’s Comet', 1705, 2214, 'A periodic comet visible from Earth every 76 years');
-INSERT INTO public.comet VALUES (2, 'Comet Hale-Bopp', 1995, 2219, 'A bright comet visible to the naked eye in 1997');
-INSERT INTO public.comet VALUES (3, 'Comet Shoemaker-Levy 9', 1993, 5313, 'A comet that collided with Jupiter in 1994, leaving a visible impact scar on the planet');
+INSERT INTO public.comet VALUES (1, 'Halley’s Comet', 1705, 2214, 'A periodic comet visible from Earth every 76 years'); --mass is wrong
+INSERT INTO public.comet VALUES (2, 'Comet Hale-Bopp', 1995, 2219, 'A bright comet visible to the naked eye in 1997'); --mass is wrong
+INSERT INTO public.comet VALUES (3, 'Comet Shoemaker-Levy 9', 1993, 5313, 'A comet that collided with Jupiter in 1994, leaving a visible impact scar on the planet'); --mass is wrong
 
 
 --
