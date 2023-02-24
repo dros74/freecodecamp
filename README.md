@@ -1,2 +1,2 @@
 # freecodecamp
-support for the freecodecamp cerification exercices
+support for the freecodecamp certifications' exercices
